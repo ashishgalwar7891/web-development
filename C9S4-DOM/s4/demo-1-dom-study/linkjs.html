@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   
+</head>
+<body>
+   <div id="content">
+
+   </div>
+   <h1> i will get removed </h1>
+   <div id="parent">
+    <p id="child"> i am paragraph</p>
+
+   </div>
+     <script>
+    
+        
+        let c=document.getElementById("child");
+
+        console.log(c);
+        console.log(c.innerHTML);
+
+        let n=document.createElement("h1");
+      
+        alert("new element created ");
+        
+        n.innerHTML="i am replaced child";
+        document.getElementById("parent").replaceChild(n,c);
+       
+
+       let newp = document. createElement("p");
+       newp.innerText = "This is a new paragraph created dynamically";
+
+// Append the newly created paragraph element to the element with Id content​
+        document.getElementById("content").appendChild(newp);
+
+    document.getElementsByTagName("h1")[0].remove();
+
+</script>
+</body>
+</html>

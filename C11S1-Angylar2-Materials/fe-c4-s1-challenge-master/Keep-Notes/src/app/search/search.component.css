@@ -1,0 +1,8 @@
+
+.input-group{
+    width: 300px;
+    position: relative;
+    left: 550px;
+    margin: 30px;
+    z-index: 1;
+}

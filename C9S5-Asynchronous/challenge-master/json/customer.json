@@ -1,0 +1,14 @@
+{
+  "customers": [
+    {
+      "custID": "121",
+      "name": "asdfasd",
+      "custPasword": "123",
+      "custConfirmPassword": "123",
+      "email": "alwar.gaurav1@gmail.com",
+      "contact": "7737633591",
+      "address": "113, Basant Vihar, Scheme No. 3",
+      "id": 1
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+body{
+    box-sizing: border-box;
+}
+header{
+    display: flex;
+    border: 1px solid black;
+    background-color: #45484a;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: whitesmoke;
+    /* z-index: 2;
+    position: relative; */
+}
+header section img{
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+}
+header section h3{
+    font-size: 20px;
+}
+nav{
+    margin-left: auto;
+    justify-self:flex-end;
+    margin-right: 5rem;
+    
+}
+nav ul li{
+    list-style: none;
+    display: inline;
+    margin: 8px;
+}
+nav ul li a{
+    color:whitesmoke;
+    text-decoration: none;
+}
+
+.div0{
+    width: 100%;
+    height: 500px;
+    border: 1px solid black;
+    background-size: 100% 500px;
+    background-image: url(../images/corporate.jpg);
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", Arial, sans-serif;
+    text-align: center;
+    color: whitesmoke;
+}
+
+.div0 h1{
+    font-size: 30px;
+    margin: 40px;
+}
+.div0 h2{
+    font-size: 20px;
+    margin: 40px;
+}
+
+.div0 button{
+    color: whitesmoke;
+    background-color: #45484a;
+    padding: 5px 10px;
+}
+
+.section{
+    border: 1px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1;
+}
+
+.section article{
+    width: 30rem;
+    height: 25rem;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color:rgb(234, 229, 219) ;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    text-align: center;
+    box-shadow: 5px 10px 5px gray;
+    margin: 10px;
+    flex: 1 1;
+    
+}
+.section article a{
+    text-decoration: none;
+    color: #000;
+}
+.section article img{
+    width: 15rem;
+    height: 12rem;
+    border-radius: 50%;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: 15rem auto auto auto auto;
+    background-color: #45484a;
+    color: aliceblue;
+    flex: 1 1;
+}
+
+.grid-item{
+    width: 80%;
+    height: 100%;
+    margin: 0px auto;
+}
+.grid-item li{
+    list-style: none;
+}
+.grid-item a{
+    text-decoration: none;
+}
+#icons{
+    display: flex;
+    text-decoration: none;
+    font-size: 1rem;
+    background-color: #fff;
+    width: 2.5rem;
+    height: 2.5rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin: 5px;
+
+}
+
+@media screen and (max-width:785px) {
+    
+}

@@ -1,0 +1,6 @@
+<h1>Add Employee Section</h1>
+<input type="number" placeholder="Enter id" [(ngModel)]="emp.id">
+<input type="text" placeholder="Enter name" [(ngModel)]="emp.name">
+<input type="number" placeholder="Enter age" [(ngModel)]="emp.age">
+<button (click)="upload()">Upload</button>
+<h2>posted data {{postdata.id}} {{postdata.name}} {{postdata.age}}</h2>

@@ -1,0 +1,23 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  /* .container{
+    width: 500px;
+    box-shadow: 3px 3px rgb(47, 102, 102);
+    border: 1px solid cyan;
+  } */
+ .f1{
+    width: 480px;
+ }
+ .mat-mdc-form-field + .mat-mdc-form-field {
+    margin-left: 8px;
+  }
+  .forms{
+    margin-left: 490px;
+    width: 550px;
+  }
+  mat-form-field{
+    border: none;
+  }

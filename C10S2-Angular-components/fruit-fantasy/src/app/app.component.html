@@ -1,0 +1,15 @@
+<app-header></app-header>
+<h1>app work  ####</h1>
+<app-fruit-fantasy></app-fruit-fantasy>
+<img src="../assets/images/apple.jpg">
+<p>{{title}}</p>
+<img [src]='url'>
+<button type="button" class="btn btn-primary">Primary</button>
+<button type="button" class="btn btn-primary" disabled>Primary button</button>
+
+<ul>
+  <li *ngFor="let frt of fruitnameandcolor">
+    {{frt.name}} color is {{frt.color}};
+  </li>
+</ul>
+

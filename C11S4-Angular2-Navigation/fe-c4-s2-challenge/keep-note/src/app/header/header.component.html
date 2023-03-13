@@ -1,0 +1,62 @@
+<mat-sidenav-container class="sidenav-container">
+    <mat-sidenav #drawer class="sidenav" fixedInViewport 
+        [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+        [mode]="(isHandset$ | async) ? 'over' : 'side'"
+        [opened]="false">    
+      <mat-toolbar>Menu</mat-toolbar>
+      <mat-nav-list>
+           <a mat-list-item href="/">
+               <mat-icon class="icon">home</mat-icon> Home
+           </a>
+           <a mat-list-item href="/">
+               <mat-icon class="icon">bookmark</mat-icon> Bookmark
+           </a>
+           <a mat-list-item href="#">
+               <mat-icon class="icon">history</mat-icon>History
+           </a>
+           <a mat-list-item>
+             <button mat-stroked-button id="signin-button" color="primary">
+                <mat-icon class="icon">account_circle</mat-icon>SIGN IN
+             </button>
+           </a>
+        </mat-nav-list>
+    </mat-sidenav>
+  
+  
+    <mat-sidenav-content>
+  
+      <mat-toolbar color="primary">
+        <button 
+        type="button" 
+        aria-label="Toggle sidenav" 
+        mat-icon-button (click)="drawer.toggle()">
+        <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
+        </button>
+        <span>Keep Notes</span>
+        <div id="search">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="search" [(ngModel)]= "search">
+              <button class="btn btn-outline-secondary" type="button" (click)="onSearchTextChanged()" id="button-addon2"><mat-icon>search</mat-icon></button>
+            </div>
+        </div>
+        <div id="navbar">
+            <a routerLink="view-notes">
+             <button mat-icon-button matTooltip="Home">
+              <mat-icon class="icon">home</mat-icon>
+             </button></a>
+             <button mat-icon-button matTooltip="apps">
+              <mat-icon class="icon">apps</mat-icon>
+             </button>
+             <button mat-icon-button matTooltip="settings">
+              <mat-icon class="icon">settings</mat-icon>
+             </button>
+          </div>
+      
+      </mat-toolbar>
+      <!-- Add Content Here -->
+
+        <router-outlet></router-outlet>
+        
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+  

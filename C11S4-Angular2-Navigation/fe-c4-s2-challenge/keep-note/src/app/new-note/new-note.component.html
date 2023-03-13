@@ -1,0 +1,33 @@
+<mat-expansion-panel (opened)="panelOpenState = true"
+                     (closed)="panelOpenState = false" id="mat-expansion-panel">
+    <mat-expansion-panel-header>
+        <mat-panel-title>
+            New Notes
+        </mat-panel-title>
+    </mat-expansion-panel-header>
+            <form class="example-form">
+                <mat-form-field class="example-full-width" id="notes-title">
+                  <input matInput placeholder="Notes Title" >
+                </mat-form-field>
+              
+                <mat-form-field class="example-full-width" id="notes-content">
+                  <textarea matInput placeholder="Notes content"></textarea>
+                </mat-form-field>
+
+                <mat-form-field appearance="fill">
+                    <mat-label>Notes Creation date</mat-label>
+                    <input matInput [matDatepicker]="picker">
+                    <mat-datepicker-toggle matIconSuffix [for]="picker"></mat-datepicker-toggle>
+                    <mat-datepicker #picker></mat-datepicker>
+                </mat-form-field>
+                <mat-radio-group aria-label="Select an option" class="input-field" name="value" appearance="outline">
+                    <p>Priority:</p>
+                    <mat-radio-button  value="Low">Low</mat-radio-button>
+                    <mat-radio-button  value="Medium">Medium</mat-radio-button>
+                    <mat-radio-button  value="High">High</mat-radio-button>
+                    <mat-radio-button  value="Critical">Critical</mat-radio-button>
+                </mat-radio-group>
+                <br>
+                <button mat-raised-button color="primary">Save</button>
+              </form>
+    </mat-expansion-panel>

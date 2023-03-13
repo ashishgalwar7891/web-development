@@ -1,0 +1,11 @@
+<div class="search">
+    <span>
+    <input type="text" placeholder="search by name"[(ngModel)]="searchtext" >
+    <button (click) = "searchNote()" type = button>Search</button>
+    </span>
+</div>
+<div class="card" *ngFor="let notess of notes">
+    <h3>{{notess.title}}</h3>
+    <p>{{notess.content}}</p>
+</div>
+

@@ -1,0 +1,9 @@
+<div class="container">
+    <h4>Add New Note</h4>
+    <input type="text" placeholder="Note Id" #id>
+    <input type="text" placeholder="Note Title" #title><br>
+    <textarea  cols="47" rows="3" placeholder="Note Content" #content></textarea>
+    <br>
+    <button (click)="addnote(title.value,content.value)" >Save</button>
+</div>
+

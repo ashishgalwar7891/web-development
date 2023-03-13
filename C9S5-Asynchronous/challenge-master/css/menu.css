@@ -1,0 +1,15 @@
+#category{
+    border: 2px solid balck;
+   background-color: rgb(12, 12, 84);
+   color: white;
+   width: 150px;
+   height: 40px;
+}
+#div{
+    background-color:rgb(202, 239, 202);
+    width: 300px;
+   margin-left: 300px;
+   line-height: 30px;
+   padding-left: 50px;
+   padding-right: 50px;
+}

@@ -1,0 +1,13 @@
+<p>header works!</p>
+<div class="card" *ngFor="let frt of fruit1">
+    <img src="../../assets/images/{{frt.name1}}.jpg" class="card-img-top" >
+    <div class="card-body">
+      <h5 class="card-title">{{frt.name1}}</h5>
+      <p class="card-text">{{frt.price}}</p>
+    </div>
+</div>
+<div class="inputbox">
+  <input type="text" placeholder="search by name" [(ngModel)]="searchtext">
+  <button (click)="search()">search</button>
+  <button (click)="reset()">Reset</button>
+</div>

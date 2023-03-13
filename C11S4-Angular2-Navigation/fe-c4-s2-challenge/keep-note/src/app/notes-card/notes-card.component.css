@@ -1,0 +1,15 @@
+.card{
+    width: 20rem;
+    height: fit-content;
+    margin: 25px;
+    display:inline-flex;
+
+}
+
+#displaycardbottom{
+    display: none;
+}
+
+.example-card:hover #displaycardbottom{
+    display: inline-block;
+}

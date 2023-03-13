@@ -1,0 +1,39 @@
+<form class="example-form">
+    <mat-form-field class="example-full-width" >
+    <span matPrefix> </span>
+    <input type="tel" matInput placeholder="Search" name= "search" [(ngModel)]= "search">
+    <button matSuffix mat-button (click)="onSearchTextChanged()"><mat-icon >search</mat-icon></button>
+    </mat-form-field>
+    <br/>
+    </form>
+<div class="card"   *ngFor="let e of Note"  id="over">
+  <a routerLink="../view-note/{{e.id}}">
+
+    <h3><strong>{{e?.title}}</strong></h3> 
+    <span [ngSwitch]="e.priority" style="margin-left: 10px;">
+      <mat-icon *ngSwitchCase="'High'" color="accent">arrow_circle_up</mat-icon>
+      <mat-icon *ngSwitchCase="'Medium'"color="accent">remove_circle_outline</mat-icon>
+      <mat-icon *ngSwitchCase="'Low'" color="accent">arrow_circle_down</mat-icon>
+      <mat-icon *ngSwitchCase="'Critical'" color="accent">gpp_maybe</mat-icon>
+  </span>
+
+       <p>{{e?.content}} </p> 
+       <p id="hiddenitem" >
+        <a mat-list-item href="#" x>
+            <mat-icon class="icon" >bookmark</mat-icon>
+          </a>
+          <a mat-list-item href="#">
+            <mat-icon class="icon">delete</mat-icon>
+          </a>
+          <a mat-list-item href="#">
+            <mat-icon class="icon">edits</mat-icon>
+          </a>
+          <a mat-list-item href="#">
+            <mat-icon id="notifications" class="icon">notifications</mat-icon>
+          </a>
+       </p>
+      </a>
+</div>
+<app-add-note></app-add-note>
+
+

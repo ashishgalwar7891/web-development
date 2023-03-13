@@ -1,0 +1,39 @@
+<div id="wrapper">
+  <app-header></app-header>
+  <main>
+    <!-- <router-outlet></router-outlet> -->
+  </main>
+  <app-footer></app-footer>
+</div>
+
+<mat-button-toggle-group  name="ingredients" aria-label="Ingredients" multiple>
+  <mat-button-toggle value="flour">Flour</mat-button-toggle>
+  <mat-button-toggle value="eggs">Eggs</mat-button-toggle>
+  <mat-button-toggle value="sugar">Sugar</mat-button-toggle>
+</mat-button-toggle-group>
+
+
+<div>
+  <mat-icon color="primary">home</mat-icon>
+  <mat-icon color="warn">search</mat-icon>
+  <mat-icon>done</mat-icon>
+  <mat-icon color="secoundry">delete</mat-icon>
+  <mat-icon>logout</mat-icon>
+  <mat-icon>toggle on</mat-icon>
+  <mat-icon>star rate</mat-icon>
+  <mat-icon></mat-icon>
+</div>
+
+<div>
+  <span matBadge="5">Notifications</span>
+</div>
+
+<mat-grid-list cols="4" rowHeight="100px">
+  <mat-grid-tile
+      *ngFor="let tile of tiles"
+      [colspan]="tile.cols"
+      [rowspan]="tile.rows"
+      [style.background]="tile.color">
+    {{tile.text}}
+  </mat-grid-tile>
+</mat-grid-list>

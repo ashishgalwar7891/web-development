@@ -1,0 +1,76 @@
+HTTP Request,Fetch all customer details,Fetch Customer by ID,Fetch Customer by Name,Fetch Customer by Email,Add new customer,Update customer details
+URL,  http://localhost:3000/customers
+METHOD,,,,,,GET
+"Request Body 		",nil
+"Content Type	",application/json
+Body ,nil
+,,,,,,
+HTTP Response,ok
+Status Code,,,,,,200
+Status Message,,,,,,sucessful HTTP Request
+Body,id=integer,Name=String,Email=String,PhoneNo=integer,adress=array
+
+//fetch the customer by ID
+
+URL,  http://localhost:3000/customers/2
+METHOD,,,,,,GET
+"Request Body 		",nil
+"Content Type	",application/json
+Body ,nil
+,,,,,,
+HTTP Response,ok
+Status Code,,,,,,200
+Status Message,,,,,,sucessful HTTP Request
+Body,id=integer,Name=String,Email=String,PhoneNo=integer,adress=array
+
+//fetch customer by Name
+
+URL,   http://localhost:3000/customers/?name=Jessica
+METHOD,,,,,,GET
+"Request Body 		",nil
+"Content Type	",application/json
+Body ,nil
+,,,,,,
+HTTP Response,ok
+Status Code,,,,,,200
+Status Message,,,,,,sucessful HTTP Request
+Body,id=integer,Name=String,Email=String,PhoneNo=integer,adress=array
+
+//fetch customer by Email
+
+URL,  http://localhost:3000/customers/?email=Jessica@live.com
+METHOD,,,,,,GET
+"Request Body 		",nil
+"Content Type	",application/json
+Body ,nil
+,,,,,,
+HTTP Response,ok
+Status Code,,,,,,200
+Status Message,,,,,,sucessful HTTP Request
+Body,id=integer,Name=String,Email=String,PhoneNo=integer,adress=array
+
+//add the new customer
+
+URL,    http://localhost:3000/customers/
+METHOD,,,,,,POST
+"Request Body 		",id=integer,Name=String,Email=String,PhoneNo=integer,adress=array
+"Content Type	",application/json
+Body ,nil
+,,,,,,
+HTTP Response,Created
+Status Code,,,,,,201
+Status Message,,,,,,request has been fullfill and resulted in a new resourse created
+Body,id=integer,Name=String,Email=String,PhoneNo=integer,adress=array
+
+//update the customer details
+
+URL,    http://localhost:3000/customers/6
+METHOD,,,,,,PUT
+"Request Body 		",id=integer,Name=String,Email=String,PhoneNo=integer,adress=array
+"Content Type	",application/json
+Body ,nil
+,,,,,,
+HTTP Response,Ok
+Status Code,,,,,,200
+Status Message,,,,,,sucessful HTTP Request
+Body,id=integer,Name=String,Email=String,PhoneNo=integer,adress=array

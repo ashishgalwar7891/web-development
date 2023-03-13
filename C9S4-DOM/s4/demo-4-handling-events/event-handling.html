@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        button {
+            font-size: larger;
+            padding: 15px;
+        }
+
+        div {
+            text-align: center;
+          
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div>
+        <button>Change color</button>
+    </div>
+
+    <script>
+        const btn = document.querySelector('button');
+        // Math.random() it will generate random number between 0 and 1
+        function myrandom(number) {
+            return Math.floor(Math.random() * (number + 1));
+        }
+//one way of registering Event handler       
+        btn.onclick =changeBack;
+
+         function changeBack() {
+            document.body.style.backgroundColor = 'rgb(' + myrandom(255) + ',' + myrandom(255) + ',' + myrandom(255) + ')';
+        }
+        
+        window.onload=()=>{
+            document.body.style.backgroundColor = 'black';
+        }
+
+        btn.onmouseover = function () {
+            document.getElementsByTagName("button")[0].style.backgroundColor = 'darkgrey';
+        }
+        btn.onmouseout = function () {
+            document.getElementsByTagName("button")[0].style.backgroundColor = 'white';
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+HTTP Request,For all menu items,Fetch menu items by category (starters / beverages / main course),Fetch menu items by cuisine (Chinese / Asian / French / Mexican),Fetch menu item by id,Add menu item,Update menu item,Delete menu items
+URL,  http://localhost:3000/menu
+METHOD,,,,,,,GET
+"Request Body 		"nil
+"Content Type	",application/json
+Body ,nil
+,,,,,,,
+HTTP Response,oK
+Status Code,200
+Status Message,sucessful HTTP Request
+Body,ID=integer,category=String,itemName=String,price=integer,cuisine=String
+
+
+URL,   http://localhost:3000/menu/?category=Starters
+METHOD,,,,,,,GET
+"Request Body 		"nil
+"Content Type	",application/json
+Body ,nil
+,,,,,,,
+HTTP Response,oK
+Status Code,200
+Status Message,sucessful HTTP Request
+Body,ID=integer,category=String,itemName=String,price=integer,cuisine=String
+
+URL,   http://localhost:3000/menu/?category=Beverages
+METHOD,,,,,,,GET
+"Request Body 		"nil
+"Content Type	",application/json
+Body ,nil
+,,,,,,,
+HTTP Response,oK
+Status Code,200
+Status Message,sucessful HTTP Request
+Body,ID=integer,category=String,itemName=String,price=integer,cuisine=String
+
+URL,   http://localhost:3000/menu/?category=Main course
+METHOD,,,,,,,GET
+"Request Body 		"nil
+"Content Type	",application/json
+Body ,nil
+,,,,,,,
+HTTP Response,oK
+Status Code,200
+Status Message,sucessful HTTP Request
+Body,ID=integer,category=String,itemName=String,price=integer,cuisine=String
+
+
+URL,  http://localhost:3000/menu/?cuisine=Chinese
+METHOD,,,,,,,GET
+"Request Body 		"nil
+"Content Type	",application/json
+Body ,nil
+,,,,,,,
+HTTP Response,oK
+Status Code,200
+Status Message,sucessful HTTP Request
+Body,ID=integer,category=String,itemName=String,price=integer,cuisine=String
+
+
+
+URL,  http://localhost:3000/menu/?cuisine=Asian
+METHOD,,,,,,,GET
+"Request Body 		"nil
+"Content Type	",application/json
+Body ,nil
+,,,,,,,
+HTTP Response,oK
+Status Code,200
+Status Message,sucessful HTTP Request
+Body,ID=integer,category=String,itemName=String,price=floating-point,cuisine=String
+
+
+
+
+URL,  http://localhost:3000/menu/?cuisine=French
+METHOD,,,,,,,GET
+"Request Body 		"nil
+"Content Type	",application/json
+Body ,nil
+,,,,,,,
+HTTP Response,oK
+Status Code,200
+Status Message,sucessful HTTP Request
+Body,ID=integer,category=String,itemName=String,price=floating-point,cuisine=String
+
+URL,  http://localhost:3000/menu/?cuisine=Mexican
+METHOD,,,,,,,GET
+"Request Body 		"nil
+"Content Type	",application/json
+Body ,nil
+,,,,,,,
+HTTP Response,oK
+Status Code,200
+Status Message,sucessful HTTP Request
+Body,ID=integer,category=String,itemName=String,price=floating-point,cuisine=String
+
+URL,  http://localhost:3000/menu/106
+METHOD,,,,,,,GET
+"Request Body 		"nil
+"Content Type	",application/json
+Body ,nil
+,,,,,,,
+HTTP Response,oK
+Status Code,200
+Status Message,sucessful HTTP Request
+Body,ID=integer,category=String,itemName=String,price=floating-point,cuisine=String
+
+URL,  http://localhost:3000/menu/206
+METHOD,,,,,,,GET
+"Request Body 		"nil
+"Content Type	",application/json
+Body ,nil
+,,,,,,,
+HTTP Response,Not found
+Status Code,404
+Status Message,Request resourse could not be found
+Body,{}
+
+URL,  http://localhost:3000/menu/
+METHOD,,,,,,,POST
+"Request Body 		"nil
+"Content Type	",application/json
+Body ,category=String,itemName=String,price=floating-point,cuisine=String
+,,,,,,,
+HTTP Response,Created
+Status Code,201
+Status Message,request has been fullfill and resulted in a new resourse created
+Body,category=String,itemName=String,price=floating-point,cuisine=String,ID=integer
+
+URL,  http://localhost:3000/menu/311
+METHOD,,,,,,,PUT
+"Request Body 		"nil
+"Content Type	",application/json
+Body ,category=String,itemName=String,price=integer,cuisine=String,ID=integer
+,,,,,,,
+HTTP Response,oK
+Status Code,200
+Status Message,sucessful HTTP Request
+Body,category=String,itemName=String,price=floating-point,cuisine=String,ID=integer,
+
+
+URL,  http://localhost:3000/menu/311
+METHOD,,,,,,,Delete
+"Request Body 		"nil
+"Content Type	",application/json
+Body ,nil
+,,,,,,,
+HTTP Response,Not found
+Status Code,404
+Status Message,Request resourse could not be found
+Body,{}
+
+URL,  http://localhost:3000/menu/309
+METHOD,,,,,,,Delete
+"Request Body 		"nil
+"Content Type	",application/json
+Body ,nil
+,,,,,,,
+HTTP Response,OK
+Status Code,200
+Status Message,sucessful HTTP Request
+Body,{}

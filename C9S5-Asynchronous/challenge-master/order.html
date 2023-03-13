@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/order.css">
+    <link rel="stylesheet" href="css/nav.css">
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <title>Pizza Order App </title>
+
+
+</head>
+<body>
+
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="menu.html">View Menu</a>
+        <a href="customer.html">Customer Registration</a>
+        <a href="order.html">Place an Order</a>
+    </div>
+
+    <div class="container" id="first" onsubmit="adddata(event)">
+        <h1>Fill Up Order Details Here </h1>
+        <form action="" id="form1">
+            Order Id <br><input type="text" class="customerdetails" id="orderid" required>
+            Customer Name <br><input type="text" class="customerdetails" id="customername" required>
+            Email id <br><input type="email" class="customerdetails" id="emailid" required>
+            Contact Number <br><input type="tel" class="customerdetails" id="contactnumber" minlength="10"
+                maxlength="10" pattern="[0-9]+" required>
+            Order date <br><input type="date" placeholder="dd-mm-yyyy" class="customerdetails" id="orderdate" required>
+            Address <br><input type="text" class="customerdetails2" id="Address" minlength="10" required>
+
+            <p id="ab" onclick="showitems()">Add Items : +</p>
+            <br>
+
+            <div id="orderform">
+                <div class="row gap-1 gx-1 gy-1  " id="category">
+                    <div class="col-6">
+                        <div class="input-group col-2  " id="one">
+                            <label class="input-group-text" for="inputGroupSelect01">Category</label>
+                            <select class="form-select" id="category1" onchange="category(this)">
+                                <option selected>Choose...</option>
+                                <option value="Beverages">Beverages</option>
+                                <option value="Starters">Starters</option>
+                                <option value="Main Meal">Main Meal</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col-5">
+                        <div class="input-group col-2  " id="one">
+                            <label class="input-group-text" for="inputGroupSelect02">Items</label>
+                            <select class="form-select" id="category2" onchange="setprice(this)">
+                                <option selected>Choose...</option>
+                                <option style="display: none;" id="a1" value="Coke">Coke</option>
+                                <option style="display: none;" id="a2" value="Iced Tea">Iced Tea</option>
+                                <option style="display: none;" id="b1" value="Garlic Bread">Garlic Bread</option>
+                                <option style="display: none;" id="b2" value="Mozzarella Sticks">Mozzarella Sticks
+                                </option>
+                                <option style="display: none;" id="b3" value="Greek Wedge Salad">Greek Wedge Salad
+                                </option>
+                                <option style="display: none;" id="c1" value="Medium Size Margherita Pizza">Medium Size
+                                    Margherita Pizza</option>
+                                <option style="display: none;" id="c2" value="Veg Family Meal">Veg Family Meal</option>
+                                <option style="display: none;" id="c3" value="Large Size Vegan Pepperoni Pizza">Large
+                                    Size Vegan Pepperoni Pizza</option>
+
+                            </select>
+                        </div>
+                    </div>
+
+                    <!-- <input id="one" class="col-2 mt-3   " style="background-color: rgb(216, 207, 202);" required type="text" > -->
+                    <label id="PriceL" class="col-1 mt-3 five ms-2">Price</label>
+                    <label id="Price" class="col-2 mt-3 five me-4">0</label>
+                    <label id="qL" class="col-1 mt-3 five">Quantity</label>
+                    <input id="quant" class="col-2 mt-3 five me-4" type="number"
+                        onchange="calculateprice(this)"></input>
+                    <label id="tL" class="col-1 mt-3 five">Total</label>
+                    <label id="total" class="col-2 mt-3 five">0</label>
+                </div>
+            </div>
+            <br>
+            <input type="submit" value="Order Now"
+                style="background-color:rgb(7, 7, 98) ; color: aqua; width: fit-content; padding: 8px;margin: 12px;">
+
+        </form>
+
+
+    </div>
+
+    </div>
+
+
+
+</body>
+<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+<script src="js/order.js"></script>
+</html>

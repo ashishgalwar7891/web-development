@@ -1,0 +1,20 @@
+.search{
+    text-align: center;
+}
+
+span{
+    border: 1px solid rgb(181, 229, 247);
+    padding: 10px;
+}
+.card{
+    display: inline-flex;
+    flex-wrap: wrap;
+    border: 1px solid rgb(112, 193, 239);
+    border-radius: 5px;
+    width: 200px;
+    height: 200px;
+    margin: 50px 20px;
+    text-align: center;
+    box-shadow: 10px 10px 5px 5px rgb(170, 225, 244);
+    padding: 10px;
+}

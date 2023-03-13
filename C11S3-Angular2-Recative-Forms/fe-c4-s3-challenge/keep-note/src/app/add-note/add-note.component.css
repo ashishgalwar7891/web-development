@@ -1,0 +1,15 @@
+#addnote{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    color: blue;
+}
+.container{
+    width: 600px;
+}
+.main-form {
+    width: 50%;
+  }
+  
+  .example-full-width {
+    width: 100%;
+  }

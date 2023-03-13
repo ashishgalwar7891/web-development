@@ -1,0 +1,23 @@
+import { Component } from '@angular/core';
+import { LoginService } from '../service/login.service';
+
+@Component({
+  selector: 'app-login',
+  templateUrl: './login.component.html',
+  styleUrls: ['./login.component.css']
+})
+export class LoginComponent {
+  constructor (private checklogin:LoginService){}
+
+  OnInit(){
+
+  }
+
+  onlogin(username:string,password:string){
+    if(username=="admin" && password=="admin"){
+      alert("login successful");
+    }else{
+      alert("login failed");
+    }
+  }
+}

@@ -1,0 +1,95 @@
+{
+  "notes": [
+    {
+      "id": 1
+    },
+    {
+      "firstName": "saurabh",
+      "lastName": "kumar",
+      "email": "Harry@gmail.com",
+      "password": "@Saur1234",
+      "gender": "Male",
+      "age": 21,
+      "phone": "7777777777",
+      "id": 2
+    },
+    {
+      "firstName": "saurabh",
+      "lastName": "kumar",
+      "email": "Harry@gmail.com",
+      "password": "@Saur1234",
+      "gender": "Male",
+      "age": 22,
+      "phone": "7879895684",
+      "id": 3
+    },
+    {
+      "firstName": "saurabh",
+      "lastName": "kumar",
+      "email": "Harry@gmail.com",
+      "password": "@Saur123",
+      "confirmPassword": "@Saur123",
+      "gender": "Male",
+      "age": 22,
+      "phone": "7879895684",
+      "address": {
+        "street": "local",
+        "city": "bhopal",
+        "state": "mp",
+        "zip": "456993"
+      },
+      "id": 4
+    },
+    {
+      "firstName": "Gaurav",
+      "lastName": "Gupta",
+      "email": "alwar.gaurav1@gmail.com",
+      "password": "Wipro@123",
+      "confirmPassword": "Wipro@123",
+      "gender": "",
+      "age": 20,
+      "phone": "7737633591",
+      "address": {
+        "street": "113, Basant Vihar, Scheme No. 3",
+        "city": "Alwar",
+        "state": "Rajasthan",
+        "zip": "30100"
+      },
+      "id": 5
+    },
+    {
+      "firstName": "asdf",
+      "lastName": "asdf",
+      "email": "asdfas@gmail.com",
+      "password": "Wipro@123",
+      "confirmPassword": "Wipro@123",
+      "gender": "Male",
+      "age": 122,
+      "phone": "7737633591",
+      "address": {
+        "street": "113, Basant Vihar, Scheme No. 3",
+        "city": "Alwar",
+        "state": "Rajasthan",
+        "zip": "30100"
+      },
+      "id": 6
+    },
+    {
+      "firstName": "Gaurav",
+      "lastName": "Gupta",
+      "email": "alwar.gaurav1@gmail.com",
+      "password": "Wipro@123",
+      "confirmPassword": "Wipro@123",
+      "gender": "Male",
+      "age": 19,
+      "phone": "7737633591",
+      "address": {
+        "street": "113, Basant Vihar, Scheme No. 3",
+        "city": "Alwar",
+        "state": "Rajasthan",
+        "zip": "30100"
+      },
+      "id": 7
+    }
+  ]
+}

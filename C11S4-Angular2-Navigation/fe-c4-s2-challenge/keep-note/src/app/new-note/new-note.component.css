@@ -1,0 +1,13 @@
+#mat-expansion-panel{
+    width: 30rem;
+    position: relative;
+    left: 35rem;
+    margin: 2rem;
+}
+
+#notes-title{
+    width: 20rem;
+}
+#notes-content{
+    width: 20rem;
+}

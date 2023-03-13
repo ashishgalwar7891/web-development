@@ -1,0 +1,22 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav-content>
+    <mat-toolbar color="primary">
+      <span>Keep-Notes</span>
+      <div id="navbar">
+        <button mat-icon-button matTooltip="home">
+         <mat-icon class="icon">home</mat-icon>
+        </button>
+        <button mat-icon-button matTooltip="Apps">
+         <mat-icon class="icon">apps</mat-icon>
+        </button>
+        <button mat-icon-button matTooltip="settings">
+         <mat-icon class="icon">settings</mat-icon>
+        </button>
+     </div>
+    </mat-toolbar>
+    <!-- Add Content Here -->
+    <app-search (seachtextemit)="seachtextemit($event)"></app-search>
+    <app-notes-view [notes]="notes"></app-notes-view>
+    <app-add-notes ></app-add-notes>
+  </mat-sidenav-content>
+</mat-sidenav-container>

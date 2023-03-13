@@ -1,0 +1,24 @@
+<form class="example-form">
+    <mat-form-field class="example-full-width" >
+    <span matPrefix> </span>
+    <input type="tel" matInput placeholder="Search" name= "search" [(ngModel)]= "search">
+    <button matSuffix mat-button (click)="onSearchTextChanged()"><mat-icon >search</mat-icon></button>
+    </mat-form-field>
+    <br/>
+    </form>
+    <div id="div">
+<div class="card" *ngFor="let e of Note"  id="over">
+    <span id="star">
+    <span class="sp"><strong>{{e?.title}}</strong></span>
+    <span [ngSwitch]="e.priority" style="margin-left: 10px;">
+        <mat-icon *ngSwitchCase="'High'" color="accent">arrow_circle_up</mat-icon>
+        <mat-icon *ngSwitchCase="'Medium'"color="accent">remove_circle_outline</mat-icon>
+        <mat-icon *ngSwitchCase="'Low'" color="accent">arrow_circle_down</mat-icon>
+        <mat-icon *ngSwitchCase="'Critical'" color="accent">gpp_maybe</mat-icon>
+    </span>
+</span>
+       <p>{{e?.content}} </p>
+       <p style="color: rgb(111, 109, 109);">{{e?.reminderDate}}</p> 
+       <button class="button">{{e?.category}}</button>
+</div>
+</div>

@@ -1,0 +1,31 @@
+<form class="example-form">
+    <mat-form-field class="example-full-width" >
+    <span matPrefix> </span>
+    <input type="tel" matInput placeholder="Search" name= "search" [(ngModel)]= "search">
+    <button matSuffix mat-button (click)="onSearchTextChanged()"><mat-icon >search</mat-icon></button>
+    </mat-form-field>
+    <br/>
+</form>
+<div class="card"   *ngFor="let e of Note"  id="over">
+  <a routerLink="../view-note/{{e.id}}">
+    <h3><strong>{{e?.title}}</strong></h3> 
+       <p>{{e?.content}} </p> 
+       <p id="dd" >
+        <a mat-list-item href="#" x>
+            <mat-icon class="icon" >turned_in</mat-icon>
+          </a>
+          <a mat-list-item href="#">
+            <mat-icon class="icon"><i class="material-icons">delete</i></mat-icon>
+          </a>
+          <a mat-list-item href="#">
+            <mat-icon class="icon">create</mat-icon>
+          </a>
+          <a mat-list-item href="#">
+            <mat-icon id="not" class="icon">notifications</mat-icon>
+          </a>
+       </p>
+      </a>
+</div>
+<app-add-note></app-add-note>
+
+

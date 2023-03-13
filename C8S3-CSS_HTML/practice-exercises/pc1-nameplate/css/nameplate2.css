@@ -1,0 +1,33 @@
+nav{
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    width: 90%;
+    height: 5%;
+    text-align: center;
+}
+
+li{
+    list-style: none;
+    display: inline;
+}
+
+.a1{
+    float: left;
+    margin:0px 20px;
+    text-decoration: none;
+    color: aliceblue;
+}
+
+#li1{
+    float:right;
+    margin-right: 30px;
+    
+}
+
+#id1{
+    text-decoration: none;
+    color: aliceblue;
+}

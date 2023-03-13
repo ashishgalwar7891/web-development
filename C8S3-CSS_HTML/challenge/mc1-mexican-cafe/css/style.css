@@ -1,0 +1,133 @@
+body{
+    width: 100%;
+    height: 600px;
+    border: 1px solid black;
+    background-color: #f5d2c9;
+}
+
+.span1{
+    display: inline-flex;
+    justify-content: space-around;
+    border: 1px sloid black;
+    width: 120px;
+    height: 30px;
+    align-items: center;
+    color: aliceblue;
+    background-color:#451207;
+    border-radius: 10px;
+    margin: 25px 72px;
+}
+
+#img1{
+    width: 300px;
+    height: 300px;
+    margin: 0px 50px;
+    float: left;
+}
+
+.p1{
+    font-size: 15px;
+    font-weight: bold;
+    color: #3f2620;
+}
+
+.div1{
+    width: 200px;
+    height: 150px;
+    background-color: #451207;
+    position: relative;
+    top:20px;
+    left: 400px;
+}
+.div2{
+    width: 200px;
+    height: 150px;
+    background-color: #451207;
+    position: relative;
+    bottom: 130px;
+    left: 700px;
+}
+.div3{
+    width: 200px;
+    height: 150px;
+    background-color: #451207;
+    position: relative;
+    bottom: 280px;
+    left: 1000px;
+}
+
+#id1{
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: -150px;
+    left: 65px;
+}
+
+#id2{
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: 0px;
+    left: 65px;
+}
+#id3{
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 50%;
+    position: relative;
+    top: 18px;
+    left: 65px;
+}
+#p1{
+    position: relative;
+    top: -140px;
+    left: 25px;
+    color: rgb(225, 243, 59);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#p2{
+    position: relative;
+    top: 5px;
+    left: 25px;
+    color: rgb(225, 243, 59);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#p3{
+    position: relative;
+    top: 25px;
+    left: 25px;
+    color: rgb(225, 243, 59);
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.div5{
+    position: relative;
+    bottom: 250px;
+    left: 50px;
+}
+.div6{
+    position: relative;
+    bottom: 395px;
+    left: 450px;
+}
+.div7{
+    position: relative;
+    bottom: 548px;
+    left: 850px;
+}
+.div8{
+    position: relative;
+    bottom: 702px;
+    left: 1200px;
+}

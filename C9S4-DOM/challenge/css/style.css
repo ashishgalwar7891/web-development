@@ -1,0 +1,52 @@
+/* Write style code here*/
+header{
+    background-color: #000080;
+    color: aqua;
+    font-size: 3rem;
+    padding: 1rem;
+    border-bottom: 3px solid orange;
+}
+main{
+    box-shadow: 0 0 5px 1px orange;
+    border-radius: 5px;
+    border: 1px solid black;
+}
+input,textarea{
+    display: block;
+    border: none;
+    border-bottom: 1px solid rgb(50, 50, 50);
+    width: 100%;
+    margin-bottom: 1rem;
+}
+article{
+  width: 90%;
+}
+#itemname{
+  width: 7rem;
+}
+.details{
+  display: none;
+}
+.plusbutton{
+    border-radius: 50%;
+    font-weight: bolder;
+}
+.orderbutton{
+    background-color: #000080;
+    color: aqua;
+    border-radius: 5px;
+    padding: 3px 15px;
+    font-size: 16px;
+    border: none;
+    display: block;
+    width: 8rem;
+}
+
+#totalamount{
+    display: inline;
+    width: 5rem;
+    box-shadow: 0 1px 1px gray;
+    background-color: wheat;
+    border-radius: 5px;
+    font-weight: bold;
+}

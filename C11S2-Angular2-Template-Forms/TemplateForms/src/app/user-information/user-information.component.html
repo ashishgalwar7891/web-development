@@ -1,0 +1,70 @@
+<div class="container ">
+    <form #userform="ngForm" (ngSubmit)="userLogin(userform)">
+       
+        <div class="mb-3">
+            <label for="exampleInputPassword1" class="form-label">Enter Name</label>
+            <input type="text" #name="ngModel" required  class="form-control" id="exampleInputPassword1" name="username" [(ngModel)]="userd.name">
+          </div>
+    <div class="alert alert-danger" [hidden]="name.untouched || name.valid">
+    User Name is required.
+    </div>
+    <div *ngIf="name.errors && (name.valid || name.touched)">
+        <!-- <small class="text-danger" *ngIf="name.errors.required">Password is required</small>
+        <small class="text-danger" *ngIf="name.errors.minlength">Password Should be 8 charcters.</small> -->
+    </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Enter Email address</label>
+            <input type="email"  required #email="ngModel" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"name="useremail" [(ngModel)]="userd.email">
+            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+          </div>
+          <div class="alert alert-danger" [hidden]="email.untouched || email.valid">
+           Email is required.
+            </div>
+          <select  #stream="ngModel" required class="form-select" aria-label="Default select example" name="stream" [(ngModel)]="userd.stream">
+            <option selected>Select Streams </option>
+            <option value="Science">Science</option>
+            <option value="Commerce">Commerce</option>
+            <option value="Arts">Arts</option>
+          </select>
+          <div class="alert alert-danger" [hidden]="stream.untouched || stream.valid">
+           Stream is required.
+            </div>
+          <br><br>
+          <label class="form-check-label" for="exampleRadios2">
+            Select Gender
+           </label>
+          <div class="form-check">
+            <input class="form-check-input"  #gender="ngModel"  type="radio" name="exampleRadios" id="exampleRadios1" value="Male" name="gender" checked [(ngModel)]="userd.gender">
+            <label class="form-check-label" for="exampleRadios1">
+             Male
+            </label>
+          </div>
+          <div class="form-check">
+            <input class="form-check-input" #gender="ngModel" type="radio" name="exampleRadios" id="exampleRadios2" value="Female" name="gender" [(ngModel)]="userd.gender">
+            <label class="form-check-label" for="exampleRadios2">
+             Female
+            </label>
+          </div>
+          <div class="alert alert-danger" [hidden]="gender.untouched || gender.valid">
+            Gender is required.
+             </div>
+          <br><br>
+          <div class="mb-3 form-check">
+            <input type="checkbox" #suscribe="ngModel" class="form-check-input" id="exampleCheck1"name="suscribe" [(ngModel)]="userd.suscribe">
+            <label class="form-check-label" for="exampleCheck1">Suscribe Me</label>
+          </div>
+          <br><br>
+          <button [disabled]="userform.invalid" type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+<br><br><br><br><br>
+
+<form #loginid="ngForm" (ngSubmit)="userLogin(loginid.value)">
+    <input type="text" placeholder="Enter username" name="name" ngModel>
+    <br><br>
+    <input type="text" placeholder="Enter Password" name="Password" ngModel>
+    <br><br>
+    <button >save</button>
+</form>
+
+

@@ -1,0 +1,22 @@
+
+<mat-card matRipple *ngFor="let notes of notes" class="matcard" (click)="toggle()" >
+    <mat-card-title>{{notes.title}}</mat-card-title>
+    <mat-card-content>{{notes.content}}</mat-card-content>
+    <mat-card-actions></mat-card-actions>
+
+    <div id="navbar" *ngIf="show">
+        <button mat-icon-button matTooltip="bookmark">
+            <mat-icon class="icon" style="color: rgb(12, 85, 201);">bookmark</mat-icon>
+        </button>
+        <button mat-icon-button matTooltip="edits">
+            <mat-icon class="icon" style="color: rgb(12, 85, 201);">edits</mat-icon>
+        </button>
+        <button mat-icon-button matTooltip="delete">
+            <mat-icon class="icon" style="color: rgb(12, 85, 201);">delete</mat-icon>
+        </button>
+        <button mat-icon-button matTooltip="Notifications">
+         <mat-icon class="icon" style="color: rgb(196, 36, 161);">notifications</mat-icon>
+        </button>
+    </div>
+</mat-card>
+

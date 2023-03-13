@@ -1,0 +1,10 @@
+{
+  "products": [
+    {
+      "productname": "acer",
+      "productdesc": "laptop",
+      "productprice": "50000",
+      "id": 2
+    }
+  ]
+}

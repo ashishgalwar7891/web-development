@@ -1,0 +1,10 @@
+.matcard{
+    border: 1px solid rgb(121, 176, 243);
+    width: 220px;
+    height: fit-content;
+    margin: 20px 40px;
+    padding: 10px;
+    text-align: center;
+    display: inline-flex;
+
+}

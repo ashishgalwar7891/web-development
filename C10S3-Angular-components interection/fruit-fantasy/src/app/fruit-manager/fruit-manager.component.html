@@ -1,0 +1,9 @@
+<div class="container">
+    <div class="fruit-list">
+        <app-search (searchtext)="onsearchtext($event)"></app-search>
+        <app-fruit-list [fruitlist]="fruitmanager"></app-fruit-list>
+    </div>
+    <div class="add-fruit">
+        <app-add-fruit></app-add-fruit>
+    </div>
+</div>

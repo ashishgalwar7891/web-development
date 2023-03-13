@@ -1,0 +1,77 @@
+HTTP Request,View all orders,View all orders based on specific date,View all orders placed by a specific customer,View all orders by delivery status,Accept Order details,Modify Order,Cancel Order
+URL,    http://localhost:3000/orders
+METHOD,,,,,,,GET
+"Request Body 		",nil
+"Content Type	",application/json
+Body ,,,,,,,nil
+,,,,,,,
+HTTP Response,ok
+Status Code,200
+Status Message,sucessful HTTP Request
+Body,id=integer,orderDate=String,deliveryStatus=String,items=object,customer=object,name=String,email=string,phoneNo=integer,adress=array
+
+URL,  http://localhost:3000/orders/?orderDate=06-29-2022
+METHOD,,,,,,,GET
+"Request Body 		",nil
+"Content Type	",application/json
+Body ,,,,,,,nil
+,,,,,,,
+HTTP Response,ok
+Status Code,200
+Status Message,sucessful HTTP Request
+Body,id=integer,orderDate=String,deliveryStatus=String,items=object,customer=object,name=String,email=string,phoneNo=integer,adress=array
+
+URL,    http://localhost:3000/orders/?name=Mary
+METHOD,,,,,,,GET
+"Request Body 		",nil
+"Content Type	",application/json
+Body ,,,,,,,nil
+,,,,,,,
+HTTP Response,ok
+Status Code,200
+Status Message,sucessful HTTP Request
+Body,id=integer,orderDate=String,deliveryStatus=String,items=object,customer=object,name=String,email=string,phoneNo=integer,adress=array
+
+URL, http://localhost:3000/orders/?deliveryStatus=order returned
+METHOD,,,,,,,GET
+"Request Body 		",nil
+"Content Type	",application/json
+Body ,,,,,,,nil
+,,,,,,,
+HTTP Response,ok
+Status Code,200
+Status Message,sucessful HTTP Request
+Body,id=integer,orderDate=String,deliveryStatus=String,items=object,customer=object,name=String,email=string,phoneNo=integer,adress=array
+
+URL, http://localhost:3000/orders/
+METHOD,,,,,,,POST
+"Request Body 		",id=integer,orderDate=String,deliveryStatus=String,items=object,customer=object,name=String,email=string,phoneNo=integer,adress=array
+"Content Type	",application/json
+Body ,,,,,,,
+,,,,,,,
+HTTP Response,created
+Status Code,201
+Status Message,sucessful HTTP Request
+Body,id=integer,orderDate=String,deliveryStatus=String,items=object,customer=object,name=String,email=string,phoneNo=integer,adress=array 
+
+URL, http://localhost:3000/orders/606
+METHOD,,,,,,,PUT
+"Request Body 		",id=integer,orderDate=String,deliveryStatus=String,items=object,customer=object,name=String,email=string,phoneNo=integer,adress=array
+"Content Type	",application/json
+Body ,,,,,,,
+,,,,,,,
+HTTP Response,ok
+Status Code,202
+Status Message,sucessful HTTP Request
+Body,id=integer,orderDate=String,deliveryStatus=String,items=object,customer=object,name=String,email=string,phoneNo=integer,adress=array 
+
+URL, http://localhost:3000/orders/606
+METHOD,,,,,,,delet
+"Request Body 		",nil
+"Content Type	",application/json
+Body ,,,,,,,nil
+,,,,,,,
+HTTP Response,ok
+Status Code,202
+Status Message,sucessful HTTP Request
+Body,{}

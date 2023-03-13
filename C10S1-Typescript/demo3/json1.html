@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+  <h1>Product data</h1>
+  <form onsubmit="savedata()">
+<h3>
+Enter product name<input type="text" id="pname" placeholder="Enter productname"><br><br>
+Enter product desc<input type="text" id="pdesc" placeholder="Enter product desc"><br><br>
+Enter product prics<input type="text" id="pprice" placeholder="Enter produc price"><br><br>
+<input type="submit" value="StoreData" />
+</h3>
+</form>
+
+<button onclick="fetchData()">fetch data</button><br>
+Enter product id<input type="text" id="productid" placeholder="Enter product ID"><br><br>
+<button onclick="deleteData()">Delete Data </button>
+
+
+<div id="loaddata">
+
+</div>
+
+
+
+
+
+<script src="script.js">
+
+    </script>
+
+</body>
+</html>

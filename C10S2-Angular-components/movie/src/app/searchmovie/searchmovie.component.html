@@ -1,0 +1,14 @@
+
+<div class="inputbox">
+    <input type="text" placeholder="search by name" [(ngModel)]="searchtext" (keydown.enter)="search()">
+    <button (click)="search()">search</button>
+    <button (click)="reset()">Reset</button>
+</div>
+
+<div *ngFor="let movie of movies" class="maindiv">
+    <img id="img1" src="../../assets/{{movie.movieTitle}}.jpg">
+    <div class="div1">
+        <h3><img src="../../assets/rating.jpg"> {{movie.movieTitle}}</h3>
+        <p>&nbsp;&nbsp;{{movie.genre}}&nbsp;&nbsp;&nbsp;&nbsp;{{movie.rating}}&nbsp;&nbsp;&nbsp;&nbsp;{{movie.yearOfRelease}}</p>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+
+.container{
+    border: 1px solid black;
+    width: 400px;
+    margin:auto;
+    margin-top: 10px;
+}
+.area{
+    width: 90%;
+    margin-left:10px ;
+}
+.text{
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+.btn{
+    margin-left: 10px;
+}
+.example-button-container{
+position: fixed;
+margin: 0;
+padding-left: 1450px; 
+}

@@ -1,0 +1,25 @@
+<div class="card">
+<mat-card class="example-card">
+    <a routerLink="../edit-notes/{{notes.id}}">
+    <mat-card-header>
+        <mat-card-title>{{notes.title}}</mat-card-title>
+        <span [ngSwitch]="notes.priority" style="margin-left: 10px;">
+            <mat-icon *ngSwitchCase="'High'" color="accent">arrow_circle_up</mat-icon>
+            <mat-icon *ngSwitchCase="'Medium'"color="accent">remove_circle_outline</mat-icon>
+            <mat-icon *ngSwitchCase="'Low'" color="accent">arrow_circle_down</mat-icon>
+            <mat-icon *ngSwitchCase="'Critical'" color="accent">gpp_maybe</mat-icon>
+        </span>
+    </mat-card-header>
+    <mat-card-content>
+        <p>{{notes.content}}</p>
+        <mat-divider></mat-divider>
+    </mat-card-content>
+    </a>
+    <mat-card-actions id="displaycardbottom">
+        <button mat-button color="primary"><mat-icon>delete</mat-icon></button>
+        <button mat-button color="primary"><mat-icon>edit</mat-icon></button>
+        <button mat-button color="primary"><mat-icon>bookmark</mat-icon></button>
+        <button mat-button color="{{clr}}" (click)="toggle()"><mat-icon>favorites</mat-icon></button>
+    </mat-card-actions>
+</mat-card>
+</div> 

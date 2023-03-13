@@ -1,0 +1,38 @@
+<div class="card"    id="over">
+      <h3><strong>{{note?.title}}</strong></h3> 
+         <p>{{note?.content}} </p> 
+         <p id="dd" >
+          <a mat-list-item href="#" x>
+              <mat-icon class="icon" >turned_in</mat-icon>
+            </a>
+            <a mat-list-item href="#">
+              <mat-icon class="icon"><i class="material-icons" (click)="deletenote()">delete</i></mat-icon>
+            </a>
+            <a mat-list-item href="#">
+              <mat-icon class="icon" (click)="editnote()">create</mat-icon>
+            </a>
+            <a mat-list-item href="#">
+              <mat-icon id="not" class="icon">notifications</mat-icon>
+            </a>
+         </p>
+  </div>
+  <form id="edit">
+    <mat-form-field class="example-full-width">
+        <mat-label>Title</mat-label>
+        <input type="text" matInput name="title" required  [(ngModel)]="note.title">
+      </mat-form-field>
+  
+      <mat-form-field class="example-full-width">
+        <mat-label>Content</mat-label>
+        <input type="text" matInput name="content" required  [(ngModel)]="note.content">
+      </mat-form-field>
+
+    </form>
+
+    <div class="btn"> 
+        <a routerLink="../../home">
+            <button mat-raised-button color="warn">Back</button></a>
+            <br>
+            <br>
+             <button (click)="onclick()" mat-raised-button color="accent">Home</button>
+    </div>

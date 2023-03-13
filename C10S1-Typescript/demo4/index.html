@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form id="contact-form" onsubmit="return submitContact(this)">
+    <h1>contact us</h1>
+    <div>
+        <label for="username">USER NAME</label>
+        <input type="text" name="username" id="username" required>
+    </div>
+
+    <div>
+        <label for="email">E MAIL</label>
+        <input type="text" name="email" id="email" required>
+    </div>
+
+    <div>
+        <label for="contact">Message</label>
+        <textarea minlength="15" maxlength="300" name="message" required></textarea>
+    </div>
+
+    <div>
+        <input type="Submit" value="Send Message" id="send"/>
+    </div>
+
+    </form>
+
+<script src="contacts.js"></script>
+</body>
+</html>

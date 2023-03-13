@@ -1,0 +1,27 @@
+.card{
+  
+  width: 200px;
+
+  margin-left: 100px;
+   border: 2px solid  rgb(90, 173, 173);
+    color: rgb(0, 0, 0);
+    box-shadow: 3px 3px rgb(47, 102, 102);
+    padding: 20px;
+    margin-top: 30px;
+}
+#not{
+    color:#E91E63;
+}
+#dd{
+    display: none;
+}
+.card:hover #dd{
+display: inline-block;
+}
+.icon{
+    margin: 13px;
+   
+}
+.edit{
+    margin-top: 50px;
+}

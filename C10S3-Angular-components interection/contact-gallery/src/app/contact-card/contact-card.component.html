@@ -1,0 +1,14 @@
+<div class="outer" *ngFor="let contacts of contacts" (mouseover)="displayCard(contacts)" (mouseout)="displayOut(contacts)">
+    <div><span id="char">{{contacts.firstName?.charAt(0)}}</span></div>
+    <div class="item">
+        <h4>{{contacts.firstName}}.{{contacts.lastName}}</h4>
+        <p>{{contacts.email}} <br>
+        {{contacts.contactNo}} </p>
+    </div>
+</div>
+
+
+
+    <!--  -->
+
+

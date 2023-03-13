@@ -1,0 +1,22 @@
+body{
+    background-color:rgb(20, 20, 20);
+}
+
+.div1{
+   text-align: center; 
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+}
+
+h1,h2{
+    color: aliceblue;
+}
+
+p{
+    color:chartreuse;
+    font-size:18px;
+}
